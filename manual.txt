@@ -1,0 +1,37 @@
+\section*{Manual de Preparación del Excel para SocioGraph}
+
+Para que la aplicación funcione correctamente, el archivo Excel debe seguir una estructura específica.
+
+\subsection*{Hoja 1: Datos de Contactos}
+Esta hoja debe contener la información de los contactos. Los nombres de las columnas deben estar exactamente en la \textbf{fila 1}. El orden de las columnas no es relevante, pero los nombres deben coincidir exactamente:
+
+\begin{itemize}
+    \item \texttt{NOMBRE}
+    \item \texttt{APELLIDO1}
+    \item \texttt{TELEFONO1}
+    \item \texttt{TELEFONO2}
+    \item \texttt{EMAIL}
+    \item \texttt{Respuesta}
+    \item \texttt{Observaciones}
+    \item \texttt{DOM\_LOCALIDAD}
+    \item \texttt{DOM\_CP\_CD}
+    \item \texttt{SEXO\_ID}
+    \item \texttt{EDAD}
+    \item \texttt{SEG\_NM}
+\end{itemize}
+
+\subsection*{Hoja 2: Opciones de Respuesta}
+En la segunda pestaña del archivo Excel se cargan las opciones que aparecerán en el desplegable de respuestas de la aplicación:
+
+\begin{itemize}
+    \item \textbf{Columna:} Columna \textbf{B} (la segunda).
+    \item \textbf{Filas:} Se leen desde la \textbf{fila 5} hasta la \textbf{fila 133}.
+    \item Cada celda con texto en este rango se convertirá en una opción de respuesta.
+\end{itemize}
+
+\subsection*{Consideraciones Importantes}
+\begin{itemize}
+    \item \textbf{Formato:} El archivo debe tener extensión \texttt{.xlsx}.
+    \item \textbf{Filtros:} La aplicación buscará automáticamente la primera hoja que contenga todas las columnas mencionadas arriba.
+    \item \textbf{Bloqueos:} El programa gestiona automáticamente una columna interna llamada \texttt{\_En\_llamada} para evitar que dos operadores llamen al mismo número.
+\end{itemize}

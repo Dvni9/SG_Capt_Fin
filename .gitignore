@@ -1,0 +1,27 @@
+﻿# Entornos virtuales
+venv/
+.venv/
+env/
+ENV/
+
+# Python y compilados
+__pycache__/
+*.py[cod]
+*.class
+
+# Archivos ejecutables y carpetas de build/dist (PyInstaller)
+build/
+dist/
+*.exe
+*.pkg
+
+# Credenciales y archivos sensibles
+*claves.json
+*.env
+*.private
+
+# Archivos de editores y sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
